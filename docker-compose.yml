@@ -23,6 +23,7 @@ services:
       MODE: "survival"
       ALLOW_FLIGHT: "TRUE"
       SERVER_NAME: "Сервак ёпта"
+      ONLINE_MODE: false
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data/:/data
