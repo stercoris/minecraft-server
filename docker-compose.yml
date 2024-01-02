@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      MAX_MEMORY: "3G"
+      INIT_MEMORY: "3G"
+      TZ: "Europe/Samara"
+      USE_AIKAR_FLAGS: true
+      TYPE: "FABRIC"
+      VERSION: "1.20.1"
+      MOTD: "Дарова ёпта"
+      DIFFICULTY: 'hard'
+      ICON: "./icon/asa.png"
+      OVERRIDE_ICON: "TRUE"
+      SNOOPER_ENABLED: false
+      MODE: "survival"
+      ALLOW_FLIGHT: "TRUE"
+      SERVER_NAME: "Сервак ёпта"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./data/:/data
