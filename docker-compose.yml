@@ -17,15 +17,15 @@ services:
       VERSION: "1.20.1"
       MOTD: "Дарова ёпта"
       DIFFICULTY: 'hard'
-      ICON: "./icon/asa.png"
+      ICON: "/custom/icon/asa.png"
       OVERRIDE_ICON: "TRUE"
       SNOOPER_ENABLED: false
       MODE: "survival"
       ALLOW_FLIGHT: "TRUE"
       SERVER_NAME: "Сервак ёпта"
       ONLINE_MODE: false
-      COPY_MODS_SRC: '/mods'
+      COPY_MODS_SRC: '/custom/mods'
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /data/minecraft/:/data
-      - ./data/mods:/mods
+      - ./custom/:/custom
