@@ -5,6 +5,7 @@ services:
     image: itzg/minecraft-server
     tty: true
     stdin_open: true
+    user: root
     ports:
       - "25565:25565"
     environment:
