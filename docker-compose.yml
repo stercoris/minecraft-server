@@ -31,6 +31,6 @@ services:
     volumes:
       - /data/minecraft/:/data
       - ./custom/:/custom
-      - type: bind
-        source: ./custom/dynmap/configuration.txt
-        target: /data/dynmap/configuration.txt
+      # - type: bind
+      #   source: ./custom/dynmap/configuration.txt
+      #   target: /data/dynmap/configuration.txt
