@@ -30,8 +30,9 @@ services:
       SYNC_SKIP_NEWER_IN_DESTINATION: true
       REMOVE_OLD_MODS: "TRUE"
     volumes:
+    # Dynmap requires `chown -R 1000:1000 /data/minecraft/dynmap` or else it will not start
       - /data/minecraft/:/data
       - ./custom/:/custom
-      # - type: bind
-      #   source: ./custom/dynmap/configuration.txt
-      #   target: /data/dynmap/configuration.txt
+      - type: bind
+        source: ./custom/dynmap/configuration.txt
+        target: /data/dynmap/configuration.txt
