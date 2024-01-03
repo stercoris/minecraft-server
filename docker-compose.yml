@@ -25,7 +25,7 @@ services:
       SERVER_NAME: "Сервак ёпта"
       ONLINE_MODE: false
       COPY_MODS_SRC: '/custom/mods'
+      REMOVE_OLD_MODS: "TRUE"
     volumes:
-      # attach the relative directory 'data' to the container's /data path
       - /data/minecraft/:/data
       - ./custom/:/custom
