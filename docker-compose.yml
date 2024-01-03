@@ -30,7 +30,6 @@ services:
       REMOVE_OLD_MODS: "TRUE"
     volumes:
       - /data/minecraft/:/data
-      - /data/dynmap:/data/dynmap
       - ./custom/:/custom
       - type: bind
         source: ./custom/dynmap/configuration.txt
