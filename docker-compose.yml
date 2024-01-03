@@ -28,4 +28,4 @@ services:
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /data/minecraft/:/data
-      - ./mods:/mods
+      - ./data/mods:/mods
