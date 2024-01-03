@@ -24,6 +24,8 @@ services:
       ALLOW_FLIGHT: "TRUE"
       SERVER_NAME: "Сервак ёпта"
       ONLINE_MODE: false
+      COPY_MODS_SRC: '/mods'
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./data/:/data
+      - /data/minecraft/:/data
+      - ./mods:/mods
