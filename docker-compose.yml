@@ -25,7 +25,13 @@ services:
       SERVER_NAME: "Сервак ёпта"
       ONLINE_MODE: false
       COPY_MODS_SRC: '/custom/mods'
+      COPY_CONFIG_SRC: '/custom/config'
+      SYNC_SKIP_NEWER_IN_DESTINATION: true
       REMOVE_OLD_MODS: "TRUE"
     volumes:
       - /data/minecraft/:/data
+      - /data/dynmap:/data/dynmap
       - ./custom/:/custom
+      - type: bind
+        source: ./custom/dynmap/configuration.txt
+        target: /data/dynmap/configuration.txt
