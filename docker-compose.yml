@@ -16,6 +16,7 @@ services:
       TZ: "Europe/Samara"
       USE_AIKAR_FLAGS: true
       TYPE: "FABRIC"
+      FABRIC_LOADER_VERSION: "0.14.22"
       VERSION: "1.20.1"
       MOTD: "Дарова ёпта"
       DIFFICULTY: 'hard'
