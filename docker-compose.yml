@@ -11,8 +11,8 @@ services:
       - "8123:8123"
     environment:
       EULA: "TRUE"
-      MAX_MEMORY: "3G"
-      INIT_MEMORY: "3G"
+      MAX_MEMORY: "6G"
+      INIT_MEMORY: "6G"
       TZ: "Europe/Samara"
       USE_AIKAR_FLAGS: true
       TYPE: "FABRIC"
