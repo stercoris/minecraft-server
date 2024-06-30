@@ -1,11 +1,5 @@
 FROM itzg/minecraft-server
 
-# Устанавливаем рабочий каталог
-WORKDIR /data
-
-
-VOLUME ["/data/minecraft", "/data"]
-
 
 # Копируем необходимые файлы и директории
 COPY ./custom /custom
@@ -35,7 +29,8 @@ ENV EULA=TRUE \
     REMOVE_OLD_MODS=TRUE
 
 
+VOLUME ["/data/minecraft", "/data"]
+
+
 # Открываем порты
 EXPOSE 25565 8123
-
-ENTRYPOINT [ "/start" ]
