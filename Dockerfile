@@ -1,9 +1,11 @@
 FROM itzg/minecraft-server
 
 
+VOLUME ["/data/minecraft", "/data"]
+
 # Копируем необходимые файлы и директории
 COPY ./custom /custom
-COPY ./custom/dynmap/configuration.txt /dynmap/configuration.txt
+COPY ./custom/dynmap/configuration.txt /data/dynmap/configuration.txt
 
 # Устанавливаем переменные окружения
 ENV EULA=TRUE \
@@ -29,7 +31,6 @@ ENV EULA=TRUE \
     REMOVE_OLD_MODS=TRUE
 
 
-VOLUME ["/data/minecraft", "/data"]
 
 
 # Открываем порты
