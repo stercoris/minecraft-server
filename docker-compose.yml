@@ -11,8 +11,8 @@ services:
       - "8123:8123"
     environment:
       EULA: "TRUE"
-      MAX_MEMORY: "6G"
-      INIT_MEMORY: "6G"
+      MAX_MEMORY: "5G"
+      INIT_MEMORY: "5G"
       TZ: "Europe/Samara"
       USE_AIKAR_FLAGS: true
       TYPE: "FABRIC"
@@ -36,5 +36,5 @@ services:
       - /data/minecraft/:/data
       - ./custom/:/custom
       - type: bind
-        source: ./custom/dynmap/configuration.txt
-        target: /data/dynmap/configuration.txt
+        target: ./custom/dynmap/configuration.txt
+        source: /data/dynmap/configuration.txt
