@@ -36,5 +36,5 @@ services:
       - /data/minecraft/:/data
       - ./custom/:/custom
       - type: bind
-        target: ./custom/dynmap/configuration.txt
-        source: /data/dynmap/configuration.txt
+        source: ./custom/dynmap/configuration.txt
+        target: /data/dynmap/configuration.txt
