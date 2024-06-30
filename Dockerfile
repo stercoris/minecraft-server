@@ -3,7 +3,7 @@ FROM itzg/minecraft-server
 
 # Копируем необходимые файлы и директории
 COPY ./custom /custom
-COPY ./custom/dynmap/configuration.txt /data/dynmap/configuration.txt
+COPY ./custom/dynmap/configuration.txt /dynmap/configuration.txt
 
 # Устанавливаем переменные окружения
 ENV EULA=TRUE \
