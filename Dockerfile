@@ -38,5 +38,4 @@ ENV EULA=TRUE \
 # Открываем порты
 EXPOSE 25565 8123
 
-# Команда запуска
-CMD ["sh", "-c", "/start"]
+ENTRYPOINT [ "/start" ]
