@@ -9,8 +9,8 @@ COPY ./custom/dynmap/configuration.txt /data/dynmap/configuration.txt
 
 # Устанавливаем переменные окружения
 ENV EULA=TRUE \
-    MAX_MEMORY=5G \
-    INIT_MEMORY=5G \
+    MAX_MEMORY=6G \
+    INIT_MEMORY=6G \
     TZ=Europe/Samara \
     USE_AIKAR_FLAGS=true \
     TYPE=FABRIC \
