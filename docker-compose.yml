@@ -33,5 +33,4 @@ services:
     volumes:
       - ./data:/data
       - ./custom:/custom
-      - ./custom/dynmap/configuration.txt:/data/dynmap/configuration.txt:ro
     restart: unless-stopped
