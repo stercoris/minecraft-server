@@ -31,6 +31,6 @@ services:
       REMOVE_OLD_MODS: "TRUE"
       SIMULATION_DISTANCE: "7"
     volumes:
-      - ./data:/data
+      - ./data/minecraft:/data
       - ./custom:/custom
     restart: unless-stopped
