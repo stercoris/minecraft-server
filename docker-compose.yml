@@ -18,7 +18,6 @@ services:
       VERSION: "1.21.1"
       MOTD: "Дарова ёпта"
       DIFFICULTY: "hard"
-      ICON: "/custom/icon/asa.png"
       OVERRIDE_ICON: "TRUE"
       SNOOPER_ENABLED: "false"
       MODE: "survival"
